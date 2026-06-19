@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak RAVEN</title>
+    <title>Kontak - Portofolio Gen Z</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .text-animate {
@@ -16,10 +16,11 @@
         }
     </style>
 </head>
-<body class="bg-[#0A0A0A] text-white font-sans antialiased overflow-x-hidden pt-24">
+<body class="bg-[#02060E] text-white font-sans antialiased overflow-x-hidden pt-24 relative">
 
-    <nav class="fixed top-0 w-full z-50 p-6 flex justify-between items-center bg-[#0A0A0A]/90 backdrop-blur-md border-b border-white/10">
-        <div class="text-2xl font-extrabold tracking-tighter">RA<span class="text-[#9303C5]">VEN.</span></div>
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 p-6 flex justify-between items-center bg-[#02060E]/90 backdrop-blur-md border-b border-white/10">
+        <div class="text-2xl font-extrabold tracking-tighter">LO<span class="text-[#9303C5]">GO.</span></div>
         <div class="flex gap-4">
             <a href="index.html" class="text-white hover:text-[#9303C5] font-medium transition-colors">Home</a>
             <a href="galeri.html" class="text-white hover:text-[#9303C5] font-medium transition-colors">Galeri</a>
@@ -27,39 +28,48 @@
         </div>
     </nav>
 
+    <!-- SECTION KONTAK -->
     <section class="py-10 px-10 md:px-20 min-h-screen flex items-center">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 w-full">
             
+            <!-- Kiri: Socials -->
             <div class="w-full md:w-1/2 flex flex-col justify-center">
                 <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-white text-animate">
                     Let's <span class="text-[#9303C5]">Connect.</span>
                 </h2>
-                <p class="text-[#9303C5] mb-10 text-lg text-animate" style="animation-delay: 0.1s;">
+                <p class="text-gray-400 mb-10 text-lg text-animate" style="animation-delay: 0.1s;">
                     Punya ide kolaborasi gila atau sekadar mau say hi? Jangan ragu buat mampir ke DM gue.
                 </p>
                 <div class="flex flex-wrap gap-4 text-animate" style="animation-delay: 0.2s;">
-                    <a href="https://www.instagram.com/kyouka.next" target="_blank" class="px-6 py-3 bg-gray-800 text-white rounded-full font-medium hover:bg-[#9303C5] text-white hover:text-black transition-colors duration-300">Instagram 📸</a>
-                    <a href="https://staytopup.com" target="_blank" class="px-6 py-3 bg-gray-800 text-white rounded-full font-medium hover:bg-[#9303C5] text-white hover:text-black transition-colors duration-300">TOP UP MURAH 🔰</a>
-                    <a href="mailto:see.kyouka@gmail.com" class="px-6 py-3 bg-gray-800 text-white rounded-full font-medium hover:bg-[#9303C5] text-white hover:text-black transition-colors duration-300">Email ✉️</a>
+                    <a href="https://instagram.com/kyouka.next" target="_blank" class="px-6 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-[#9303C5] transition-colors duration-300">Instagram 📸</a>
+                    <a href="https://staytopup.com" target="_blank" class="px-6 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-[#9303C5] transition-colors duration-300">TOP UP MURAH🔰</a>
+                    <a href="mailto:gevihox@gmail.com" class="px-6 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-[#9303C5] transition-colors duration-300">Email ✉️</a>
                 </div>
             </div>
 
+            <!-- Kanan: Form -->
             <div class="w-full md:w-1/2 text-animate" style="animation-delay: 0.4s;">
-                <form class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
+                <!-- Tambahkan ID "contactForm" agar bisa dibaca Javascript -->
+                <form id="contactForm" action="https://formspree.io/f/mjgdnezn" method="POST" class="bg-gray-900/50 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
                     <h3 class="text-2xl font-bold mb-6 text-white">Kirim Pesan</h3>
+                    
                     <div class="mb-5">
                         <label class="block text-gray-400 text-sm font-bold mb-2">Nama Lo</label>
-                        <input class="w-full bg-[#02060E] text-white border border-gray-700 rounded-xl py-3 px-4 focus:outline-none focus:border-[#9303C5] focus:ring-1 focus:[#9303C5]" type="text" placeholder="John Doe">
+                        <input name="nama" class="w-full bg-[#02060E] text-white border border-gray-700 rounded-xl py-3 px-4 focus:outline-none focus:border-[#9303C5] focus:ring-1 focus:ring-[#9303C5] transition-colors" type="text" placeholder="John Doe" required>
                     </div>
+                    
                     <div class="mb-5">
                         <label class="block text-gray-400 text-sm font-bold mb-2">Email</label>
-                        <input class="w-full bg-[#02060E] text-white border border-gray-700 rounded-xl py-3 px-4 focus:outline-none focus:border-[#9303C5] focus:ring-1 focus:[#9303C5]" type="email" placeholder="john@example.com">
+                        <input name="email" class="w-full bg-[#02060E] text-white border border-gray-700 rounded-xl py-3 px-4 focus:outline-none focus:border-[#9303C5] focus:ring-1 focus:ring-[#9303C5] transition-colors" type="email" placeholder="john@example.com" required>
                     </div>
+                    
                     <div class="mb-6">
                         <label class="block text-gray-400 text-sm font-bold mb-2">Pesan</label>
-                        <textarea class="w-full bg-[#02060E] text-white border border-gray-700 rounded-xl py-3 px-4 focus:outline-none focus:border-[#9303C5] focus:ring-1 focus:[#9303C5] h-32 resize-none" placeholder="Ketik pesan lo di sini..."></textarea>
+                        <textarea name="pesan" class="w-full bg-[#02060E] text-white border border-gray-700 rounded-xl py-3 px-4 focus:outline-none focus:border-[#9303C5] focus:ring-1 focus:ring-[#9303C5] transition-colors h-32 resize-none" placeholder="Ketik pesan lo di sini..." required></textarea>
                     </div>
-                    <button class="w-full bg-[#9303C5] text-white font-bold py-4 px-8 rounded-xl hover:bg-[#C50337] hover:scale-[1.02] transition-transform duration-300" type="button">
+                    
+                    <!-- Tambahkan ID "submitBtn" -->
+                    <button id="submitBtn" type="submit" class="w-full bg-[#9303C5] text-white font-bold py-4 px-8 rounded-xl hover:bg-opacity-80 hover:scale-[1.02] transition-all duration-300">
                         Kirim Sekarang 🚀
                     </button>
                 </form>
@@ -67,5 +77,76 @@
         </div>
     </section>
 
+    <!-- ========================================== -->
+    <!-- POP-UP MODAL (Awalnya Disembunyikan)       -->
+    <!-- ========================================== -->
+    <div id="successModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+        <div id="modalContent" class="bg-gray-900 border border-[#9303C5] p-10 rounded-3xl text-center max-w-sm mx-auto transform scale-95 transition-transform duration-300 shadow-[0_0_40px_rgba(147,3,197,0.3)]">
+            <div class="text-6xl mb-6 animate-bounce">💌</div>
+            <h4 class="text-2xl font-extrabold text-white mb-2">Pesan Terkirim!</h4>
+            <p class="text-gray-400 mb-8">Thanks udah reach out! Gue bakal baca dan balas secepatnya.</p>
+            <button id="closeModalBtn" class="w-full bg-[#02060E] border border-[#9303C5] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#9303C5] transition-colors duration-300">
+                Tutup Form
+            </button>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SCRIPT JAVASCRIPT UNTUK FORM & POP-UP      -->
+    <!-- ========================================== -->
+    <script>
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const modal = document.getElementById('successModal');
+        const modalContent = document.getElementById('modalContent');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+
+        form.addEventListener('submit', async function(event) {
+            // Mencegah halaman berpindah (redirect) bawaan HTML
+            event.preventDefault();
+            
+            // Ubah teks tombol jadi loading
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Mengirim... ⏳';
+            submitBtn.disabled = true;
+
+            // Ambil data form
+            const data = new FormData(event.target);
+
+            try {
+                // Kirim data ke Formspree di latar belakang
+                const response = await fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    // Jika sukses: Kosongkan isian form
+                    form.reset();
+                    
+                    // Tampilkan Pop-Up
+                    modal.classList.remove('opacity-0', 'pointer-events-none');
+                    modalContent.classList.remove('scale-95');
+                    modalContent.classList.add('scale-100');
+                } else {
+                    alert("Oops! Ada masalah saat mengirim form.");
+                }
+            } catch (error) {
+                alert("Oops! Gagal menyambung ke server.");
+            } finally {
+                // Kembalikan tombol seperti semula
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Fungsi untuk menutup Pop-Up saat tombol 'Tutup' diklik
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+        });
+    </script>
 </body>
 </html>
