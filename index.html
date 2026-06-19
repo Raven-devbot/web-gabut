@@ -16,37 +16,41 @@
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white font-sans antialiased overflow-x-hidden">
+<body class="bg-[#02060E] text-white font-sans antialiased overflow-x-hidden">
 
     <nav class="absolute top-0 w-full z-50 p-6 flex justify-between items-center bg-transparent">
-        <div class="text-2xl font-extrabold tracking-tighter">LO<span class="text-green-400">GO.</span></div>
+        <div class="text-2xl font-extrabold tracking-tighter">LO<span class="text-[#9303C5]">GO.</span></div>
         <div class="flex gap-4">
-            <a href="index.html" class="text-green-400 font-bold border-b-2 border-green-400 pb-1">Home</a>
-            <a href="galeri.html" class="text-white hover:text-green-400 font-medium transition-colors">Galeri</a>
-            <a href="kontak.html" class="text-white hover:text-green-400 font-medium transition-colors">Kontak</a>
+            <a href="index.html" class="text-[#9303C5] font-bold border-b-2 border-[#9303C5] pb-1">Home</a>
+            <a href="galeri.html" class="text-white hover:text-[#9303C5] font-medium transition-colors">Galeri</a>
+            <a href="kontak.html" class="text-white hover:text-[#9303C5] font-medium transition-colors">Kontak</a>
         </div>
     </nav>
 
     <main class="min-h-screen flex flex-col md:flex-row pt-20 md:pt-0">
-        <section class="w-full md:w-1/2 flex flex-col justify-center px-10 md:px-20 py-16 bg-gray-900">
+        <section class="w-full md:w-1/2 flex flex-col justify-center px-10 md:px-20 py-16 bg-[#02060E]">
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-animate">
                 Bikin Karya.<br>
-                <span class="text-green-400">Tanpa Batas.</span>
+                <span class="text-[#9303C5]">Tanpa Batas.</span>
             </h1>
             <p class="text-lg text-gray-400 mb-10 text-animate" style="animation-delay: 0.1s;">
                 Platform revolusioner untuk mengubah ide gila menjadi realitas digital.
             </p>
             <div class="flex items-center text-animate" style="animation-delay: 0.2s;">
-                <a href="galeri.html" class="bg-green-400 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-green-300 transition-transform duration-300 hover:scale-105">
+                <a href="galeri.html" class="bg-[#9303C5] text-white shadow-[0_0_20px_rgba(147,3,197,0.4)] font-bold py-3 px-8 rounded-full hover:bg-opacity-80 transition-all duration-300 hover:scale-105">
                     Lihat Karya Gue
                 </a>
             </div>
         </section>
 
-        <section class="w-full md:w-1/2 bg-indigo-600 flex items-center justify-center p-10 relative overflow-hidden text-animate" style="animation-delay: 0.3s;">
-            <div class="w-64 h-64 bg-white/10 backdrop-blur-lg rounded-3xl border border-white/20 flex items-center justify-center shadow-2xl">
-                <span class="text-white/60 font-medium tracking-widest text-center px-4">TUMPUKAN POSTER DI SINI</span>
+        <section class="w-full md:w-1/2 bg-gradient-to-br from-[#9303C5] to-[#02060E] flex items-center justify-center p-10 relative overflow-hidden text-animate" style="animation-delay: 0.3s;">
+            
+            <div class="relative w-64 h-80 flex items-center justify-center group">
+                <img src="poster2.jpg" alt="Karya Poster 2" class="absolute w-full h-full object-cover rounded-2xl shadow-2xl transform -rotate-6 scale-95 opacity-80 group-hover:-rotate-12 group-hover:scale-90 transition-all duration-500 border border-white/10">
+                
+                <img src="poster1.jpg" alt="Karya Poster Utama" class="absolute w-full h-full object-cover rounded-2xl shadow-2xl transform rotate-3 group-hover:rotate-0 group-hover:scale-105 transition-all duration-500 z-10 border border-white/20">
             </div>
+
         </section>
     </main>
 
